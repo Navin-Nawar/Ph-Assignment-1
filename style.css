@@ -115,7 +115,8 @@ body{
    
 }
 .person-parent-text{
-    margin-top: 60px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 .person-parent-pic{
@@ -150,6 +151,9 @@ body{
 .light-txt{
     color: #575757;
 }
+
+
+
 .Subscribe{
     text-align: center;
     padding: 0px 60px 80px 60px;
@@ -233,6 +237,11 @@ body{
 }
 
 
+.cmn-btn:hover{
+    color:#EEF4FF;
+    background-color:purple;
+    cursor:grab;
+}
 
 
 
@@ -240,93 +249,266 @@ body{
 
 
 
-
-
-/* Career Section */
+/* ==========================
+      CAREER SECTION
+========================== */
 
 .career{
-    padding: 80px 60px;
+    padding:90px 60px;
 }
 
 .career-text{
-    text-align: center;
-    margin-bottom: 60px;
+    text-align:center;
+    margin-bottom:60px;
 }
 
 .career-text h1{
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 15px;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:18px;
 }
 
 .career-text p{
-    max-width: 700px;
-    margin: auto;
-    color: #6B7280;
-    line-height: 1.7;
-    font-size: 17px;
+    max-width:700px;
+    margin:auto;
+    color:#6B7280;
+    font-size:17px;
+    line-height:1.8;
 }
+
+/* Grid */
 
 .career-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
 }
 
+/* Card */
+
 .career-card{
-    background: #FFFFFF;
-    border: 1px solid #E5E7EB;
-    border-radius: 15px;
-    padding: 30px;
-    transition: .3s;
+
+    background:white;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    padding:32px;
+
+    position:relative;
+
+    transition:.35s;
+
 }
 
 .career-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,.1);
-    border-color: #2563EB;
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+    border-color:#2563EB;
+
 }
+
+/* Icon Box */
+
+.career-top{
+
+    width:72px;
+
+    height:72px;
+
+    background:#EEF4FF;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+/* Icon */
+
+.material-symbols-outlined{
+
+    font-size:40px;
+
+    color:#2563EB;
+
+}
+
+/* Heading */
 
 .career-card h3{
-    font-size: 24px;
-    margin-bottom: 18px;
-    color: #111827;
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+    color:#111827;
+
 }
+
+/* Paragraph */
 
 .career-card p{
-    color: #6B7280;
-    line-height: 1.7;
-    margin-bottom: 30px;
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
 }
 
+/* Button */
+
 .career-btn{
-    width: 100%;
-    height: 45px;
-    background: #2563EB;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: .3s;
+
+    width:100%;
+
+    height:48px;
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
 }
 
 .career-btn:hover{
-    background: #1D4ED8;
+
+    background:#1D4ED8;
+
 }
 
-.ML{
-    background-color: #0D1B2A;
-    color: white;
-}
-.ML h3{
-    color: white;
+/* ==========================
+      FEATURED CARD
+========================== */
+
+.featured{
+
+    background:#0F172A;
+
+    border:none;
+
 }
 
-.ML p{
-    color: white;
+.featured h3{
+
+    color:white;
+
 }
+
+.featured p{
+
+    color:#CBD5E1;
+
+}
+
+/* Featured Icon Box */
+
+.featured .career-top{
+
+    background:#1E3A8A;
+
+}
+
+/* Featured Icon */
+
+.featured .material-symbols-outlined{
+
+    color:white;
+
+}
+
+/* Featured Button */
+
+.feature-btn{
+
+    background:#3B82F6;
+
+}
+
+.feature-btn:hover{
+
+    background:#2563EB;
+
+}
+
+/* Badge */
+
+.badge{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    background:#FACC15;
+
+    color:#111827;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.career-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.career-container{
+
+grid-template-columns:1fr;
+
+}
+
+.career{
+
+padding:70px 20px;
+
+}
+
+}
+
 
 
 
